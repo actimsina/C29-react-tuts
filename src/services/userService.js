@@ -5,4 +5,7 @@ const register = (user) => {
     return axios.post(`${baseUrl}/register`, user)
 }
 
-export default { register }
+const login = (user) => {
+    return axios.post(`${baseUrl}/login`, user)
+}
+export default { register, login }
